@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haluatko regulaatiomiljonääriksi? | Fimea & Lääkevalvonta</title>
+  <meta name="description" content="Haluatko regulaatiomiljonääriksi? Testaa tietosi Fimeasta, lääkeregulaatiosta, myyntiluvista, lääketurvasta, kliinisistä tutkimuksista ja lääkinnällisistä laitteista TV-visailun säännöillä!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Taustan studiovalaistus -->
+  <div class="studio-bg">
+    <div class="spotlight spotlight-1"></div>
+    <div class="spotlight spotlight-2"></div>
+    <div class="studio-grid"></div>
+  </div>
+
+  <!-- Yläpalkki -->
+  <header class="topbar">
+    <div class="topbar-brand" id="btnHomeLogo" title="Palaa alkuvalikkoon">
+      <div class="logo-emblem">
+        <span class="logo-ring"></span>
+        <span class="logo-rx">§</span>
+      </div>
+      <div class="logo-text">
+        <span class="logo-kicker">LÄÄKEVALVONNAN TIETOVISA</span>
+        <span class="logo-title">HALUATKO REGULAATIOMILJONÄÄRIKSI?</span>
+      </div>
+    </div>
+
+    <div class="topbar-controls">
+      <button type="button" class="icon-btn" id="btnRulesModal" title="Pelin säännöt">
+        <span>📜</span> <span class="btn-label">Säännöt</span>
+      </button>
+      <button type="button" class="icon-btn" id="btnStudyModal" title="Selaa kysymyspankkia">
+        <span>📚</span> <span class="btn-label">Kysymyspankki</span>
+      </button>
+      <button type="button" class="icon-btn" id="btnSoundToggle" title="Äänet päälle/pois">
+        <span id="soundIcon">🔊</span> <span class="btn-label" id="soundLabel">Äänet</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="app-container">
+    <!-- ================================================================== -->
+    <!-- NÄKYMÄ 1: ALOITUSRUUTU                                             -->
+    <!-- ================================================================== -->
+    <section id="screenStart" class="screen active">
+      <div class="start-hero">
+        <div class="millionaire-crest">
+          <div class="crest-outer-ring"></div>
+          <div class="crest-middle-ring"></div>
+          <div class="crest-inner">
+            <span class="crest-top">FIMEA &amp; EU</span>
+            <h1 class="crest-main">HALUATKO<br/><span>REGULAATIO&shy;MILJONÄÄRIKSI?</span></h1>
+            <span class="crest-bottom">1 000 000 €</span>
+          </div>
+        </div>
+
+        <p class="hero-subtitle">
+          15 kysymystä kohti miljoonaa euroa! Testaa osaamisesi lääkelaista, Fimean tehtävistä,
+          EU:n myyntilupamenettelyistä, lääketurvasta, GMP/GDP-valvonnasta, HTA-arvioinnista ja lääkinnällisistä laitteista.
+        </p>
+
+        <div class="start-card">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="playerNameInput">Kilpailijan nimi tai titteli</label>
+              <input
+                type="text"
+                id="playerNameInput"
+                placeholder="Esim. Erityisasiantuntija Virtanen"
+                maxlength="32"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="categorySelect">Aihealue</label>
+              <select id="categorySelect">
+                <option value="Kaikki aihealueet">Kaikki aihealueet (Virallinen TV-formaatti)</option>
+                <option value="Fimea & Kansallinen lainsäädäntö">Fimea &amp; Kansallinen lainsäädäntö</option>
+                <option value="Myyntiluvat & EU-menettelyt">Myyntiluvat &amp; EU-menettelyt (CP/MRP/DCP)</option>
+                <option value="Lääketurva (Pharmacovigilance)">Lääketurva (Pharmacovigilance)</option>
+                <option value="Kliiniset tutkimukset & GMP/GDP">Kliiniset tutkimukset &amp; GMP/GDP</option>
+                <option value="Lääkinnälliset laitteet & HTA">Lääkinnälliset laitteet &amp; HTA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="rules-summary-strip">
+            <div class="strip-item">
+              <strong>15</strong>
+              <span>Kysymystä</span>
+            </div>
+            <div class="strip-item">
+              <strong>1 000 € &amp; 32 000 €</strong>
+              <span>Turvatasot (Kynnysrahat)</span>
+            </div>
+            <div class="strip-item">
+              <strong>3 oljenkortta</strong>
+              <span>50:50 • Yleisö • Kollega</span>
+            </div>
+          </div>
+
+          <button type="button" id="btnStartGame" class="btn-primary-gold">
+            ASTU STUDIOON &amp; ALOITA PELI
+          </button>
+        </div>
+
+        <!-- Kunniataulukko (Hall of Fame) -->
+        <div class="leaderboard-panel">
+          <div class="leaderboard-header">
+            <h2>🏆 Studioiden Kunniataulukko</h2>
+            <button type="button" id="btnClearScores" class="btn-text-subtle">Tyhjennä</button>
+          </div>
+          <div id="leaderboardList" class="leaderboard-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- NÄKYMÄ 2: PELISTUDIO                                               -->
+    <!-- ================================================================== -->
+    <section id="screenGame" class="screen">
+      <div class="game-layout">
+        <!-- Vasen/keskisarake: Pelilava -->
+        <div class="stage-column">
+          <!-- Tilannepalkki -->
+          <div class="stage-status-bar">
+            <div class="status-pill">
+              <span class="status-label">Kysymys</span>
+              <strong id="hudQuestionNumber">1 / 15</strong>
+            </div>
+            <div class="status-pill status-pill-gold">
+              <span class="status-label">Kysymyksen arvo</span>
+              <strong id="hudCurrentPrize">100 €</strong>
+            </div>
+            <div class="status-pill">
+              <span class="status-label">Turvattu kynnysraha</span>
+              <strong id="hudSafeHaven">0 €</strong>
+            </div>
+            <button type="button" id="btnWalkAway" class="btn-walk-away" title="Lopeta peli ja pidä tähän asti ansaitsemasi potti">
+              💼 Ota rahat ja lopeta (<span id="walkAwayAmount">0 €</span>)
+            </button>
+          </div>
+
+          <!-- Oljenkorret & Kategoria -->
+          <div class="lifelines-bar">
+            <div class="lifelines-group" role="group" aria-label="Oljenkorret">
+              <button type="button" id="lifeline5050" class="lifeline-btn" title="50:50 – Poistaa kaksi väärää vastausvaihtoehtoa (Näppäin 1)">
+                <span class="lifeline-badge">50:50</span>
+                <span class="lifeline-name">Puolitus</span>
+              </button>
+              <button type="button" id="lifelineAudience" class="lifeline-btn" title="Kysy yleisöltä – Studioyleisö äänestää (Näppäin 2)">
+                <span class="lifeline-badge">👥</span>
+                <span class="lifeline-name">Kysy yleisöltä</span>
+              </button>
+              <button type="button" id="lifelinePhone" class="lifeline-btn" title="Kilauta kaverille – Soita Fimea-asiantuntijalle (Näppäin 3)">
+                <span class="lifeline-badge">📞</span>
+                <span class="lifeline-name">Kilauta kollegalle</span>
+              </button>
+            </div>
+
+            <div class="category-chip-wrap">
+              <span class="category-chip" id="hudCategory">Fimea &amp; Kansallinen lainsäädäntö</span>
+              <button type="button" id="btnToggleLadderMobile" class="btn-ladder-mobile">
+                📊 Voittopuu
+              </button>
+            </div>
+          </div>
+
+          <!-- Oljenkorsien tuloslaatikko (Yleisöäänestys / Puhelinsoitto) -->
+          <div id="lifelineResultPanel" class="lifeline-result-panel hidden" aria-live="polite"></div>
+
+          <!-- Juontajan tilapalkki -->
+          <div class="host-prompt" id="hostPrompt">
+            <span class="host-avatar">🎙️</span>
+            <span id="hostPromptText">Ensimmäinen kysymys sadan euron arvoinen. Ole hyvä!</span>
+          </div>
+
+          <!-- Kysymyslaatikko (Kuusikulmainen TV-palkki) -->
+          <div class="question-hex-wrapper">
+            <div class="hex-line"></div>
+            <div class="question-hex-box" id="questionBox">
+              <p id="questionText">Ladataan kysymystä...</p>
+            </div>
+          </div>
+
+          <!-- Vastausvaihtoehdot A, B, C, D -->
+          <div class="answers-grid" role="group" aria-label="Vastausvaihtoehdot">
+            <div class="answer-row">
+              <div class="hex-line"></div>
+              <button type="button" class="answer-hex-btn" data-index="0" id="ansBtn0">
+                <span class="answer-diamond">◆</span>
+                <span class="answer-letter">A:</span>
+                <span class="answer-text" id="ansText0">Vaihtoehto A</span>
+              </button>
+              <button type="button" class="answer-hex-btn" data-index="1" id="ansBtn1">
+                <span class="answer-diamond">◆</span>
+                <span class="answer-letter">B:</span>
+                <span class="answer-text" id="ansText1">Vaihtoehto B</span>
+              </button>
+            </div>
+
+            <div class="answer-row">
+              <div class="hex-line"></div>
+              <button type="button" class="answer-hex-btn" data-index="2" id="ansBtn2">
+                <span class="answer-diamond">◆</span>
+                <span class="answer-letter">C:</span>
+                <span class="answer-text" id="ansText2">Vaihtoehto C</span>
+              </button>
+              <button type="button" class="answer-hex-btn" data-index="3" id="ansBtn3">
+                <span class="answer-diamond">◆</span>
+                <span class="answer-letter">D:</span>
+                <span class="answer-text" id="ansText3">Vaihtoehto D</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- "Lukitaanko vastaus?" -vahvistuspalkki -->
+          <div id="lockConfirmBar" class="lock-confirm-bar hidden" aria-live="polite">
+            <div class="lock-confirm-text">
+              <span class="lock-icon">🔒</span>
+              <span>Valitsit vaihtoehdon <strong id="selectedLetterLabel">A</strong>. Lukitaanko vastaus?</span>
+            </div>
+            <div class="lock-confirm-actions">
+              <button type="button" id="btnLockAnswer" class="btn-lock-final">
+                Lukitse vastaus (Enter)
+              </button>
+              <button type="button" id="btnCancelSelection" class="btn-cancel-lock">
+                Vaihda valintaa
+              </button>
+            </div>
+          </div>
+
+          <!-- Selityslaatikko ("Regulaatiofakta") vastauksen jälkeen -->
+          <div id="explanationPanel" class="explanation-panel hidden" aria-live="polite">
+            <div class="explanation-header">
+              <span id="explanationBadge" class="explanation-badge">OIKEIN!</span>
+              <h3 id="explanationTitle">Regulaatiofakta</h3>
+            </div>
+            <p id="explanationBody"></p>
+            <div class="explanation-footer">
+              <button type="button" id="btnNextStep" class="btn-primary-gold">
+                Seuraava kysymys →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oikea sarake: Voittopuu (1 - 15) -->
+        <aside id="prizeLadderAside" class="prize-ladder-aside" aria-label="Voittopuu">
+          <div class="ladder-header">
+            <h3>VOITTOPUU</h3>
+            <button type="button" id="btnCloseLadderMobile" class="btn-close-ladder">✕</button>
+          </div>
+          <ol id="prizeLadderList" class="prize-ladder-list" reversed></ol>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- NÄKYMÄ 3: LOPPUTULOS & VOITTOSEKKI                                 -->
+    <!-- ================================================================== -->
+    <section id="screenEnd" class="screen">
+      <div class="end-card">
+        <div class="end-badge" id="endBadgeIcon">🏆</div>
+        <h1 id="endHeadline">ONNEKSI OLKOON!</h1>
+        <p id="endSubtext" class="end-subtext"></p>
+
+        <!-- Virallinen Fimea-voittosekki -->
+        <div class="prize-cheque">
+          <div class="cheque-top">
+            <span class="cheque-bank">SUOMEN REGULAATIOKESKUSPANKKI • KUOPIO – HELSINKI</span>
+            <span class="cheque-date" id="chequeDate"></span>
+          </div>
+          <div class="cheque-body">
+            <div class="cheque-row">
+              <span class="cheque-label">MAKSetaan KILPAILIJALLE:</span>
+              <strong class="cheque-payee" id="chequePayee">Erityisasiantuntija</strong>
+            </div>
+            <div class="cheque-row cheque-amount-row">
+              <span class="cheque-label">VOITTOSUMMA:</span>
+              <strong class="cheque-amount" id="chequeAmount">1 000 000 €</strong>
+            </div>
+          </div>
+          <div class="cheque-bottom">
+            <div class="cheque-stat">
+              <span>Saavutettu taso:</span>
+              <strong id="endStatLevel">15 / 15</strong>
+            </div>
+            <div class="cheque-stat">
+              <span>Aihealue:</span>
+              <strong id="endStatCategory">Kaikki aihealueet</strong>
+            </div>
+            <div class="cheque-stat">
+              <span>Käytetyt oljenkorret:</span>
+              <strong id="endStatLifelines">0 / 3</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="end-actions">
+          <button type="button" id="btnPlayAgain" class="btn-primary-gold">
+            🔄 Pelaa uudelleen
+          </button>
+          <button type="button" id="btnShareResult" class="btn-secondary">
+            📋 Kopioi tulos jaettavaksi
+          </button>
+          <button type="button" id="btnBackToMenu" class="btn-secondary">
+            🏠 Alkuvalikkoon
+          </button>
+        </div>
+        <p id="shareFeedback" class="share-feedback hidden">Tulos kopioitu leikepöydälle!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================== -->
+  <!-- MODAALI 1: PELIN SÄÄNNÖT                                           -->
+  <!-- ================================================================== -->
+  <div id="modalRules" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalRulesTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalRulesTitle">📜 Haluatko regulaatiomiljonääriksi? – Säännöt</h2>
+        <button type="button" class="modal-close" data-close="modalRules">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>Peli noudattaa klassisen <strong>Haluatko miljonääriksi?</strong> -televisio-ohjelman sääntöjä lääkevalvonnan ja Fimean toimintakenttään sovellettuna:</p>
+        <ul class="rules-list">
+          <li><strong>15 porrasta kohti miljoonaa:</strong> Jokainen oikea vastaus nostaa sinut voittopuussa ylemmälle portaalle aina <strong>1 000 000 euroon</strong> saakka. Kysymysten vaikeusaste nousee kolmessa vaiheessa (kysymykset 1–5 perustaso, 6–10 asiantuntijataso, 11–15 huippuregulaattoritaso).</li>
+          <li><strong>Kaksi kynnysrahaa (turvatasoa):</strong>
+            <ul>
+              <li>1. kynnysraha: <strong>Kysymys 5 (1 000 €)</strong></li>
+              <li>2. kynnysraha: <strong>Kysymys 10 (32 000 €)</strong></li>
+            </ul>
+            Jos vastaat väärin, putoat viimeksi saavuttamallesi kynnysrahalle.
+          </li>
+          <li><strong>Ota rahat ja lopeta:</strong> Voit milloin tahansa ennen vastauksen lukitsemista päättää lopettaa pelin ja pitää edellisellä kysymyksellä ansaitsemasi voittosumman.</li>
+          <li><strong>Kolme oljenkortta (kukin käytettävissä kerran pelin aikana):</strong>
+            <ul>
+              <li><strong>50:50 (Puolitus):</strong> Tietokone poistaa kaksi väärää vastausvaihtoehtoa.</li>
+              <li><strong>Kysy yleisöltä:</strong> Studioyleisö äänestää mielestään oikeaa vaihtoehtoa.</li>
+              <li><strong>Kilauta kollegalle:</strong> Soitat Fimean tai EU-lääkevalvonnan kokeneelle asiantuntijakollegalle, joka antaa arvionsa kysymykseen.</li>
+            </ul>
+          </li>
+          <li><strong>Näppäimistöoikotiet:</strong> Voit valita vastauksen näppäimillä <kbd>A</kbd>, <kbd>B</kbd>, <kbd>C</kbd>, <kbd>D</kbd>, lukita ja siirtyä eteenpäin <kbd>Enter</kbd>-näppäimellä sekä käyttää oljenkorsia näppäimillä <kbd>1</kbd>, <kbd>2</kbd> ja <kbd>3</kbd>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================== -->
+  <!-- MODAALI 2: KYSYMYSPANKKI & OPPIMISTILA                             -->
+  <!-- ================================================================== -->
+  <div id="modalStudy" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalStudyTitle">
+    <div class="modal-content modal-large">
+      <div class="modal-header">
+        <h2 id="modalStudyTitle">📚 Regulaation kysymyspankki (60 kysymystä)</h2>
+        <button type="button" class="modal-close" data-close="modalStudy">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="study-filters">
+          <input type="search" id="studySearchInput" placeholder="Hae hakusanalla (esim. PRAC, apteekkilupa, CTIS, MDR)..." />
+          <select id="studyFilterTier">
+            <option value="all">Kaikki vaikeustasot (1–3)</option>
+            <option value="1">Taso 1: Kysymykset 1–5 (100 € – 1 000 €)</option>
+            <option value="2">Taso 2: Kysymykset 6–10 (2 000 € – 32 000 €)</option>
+            <option value="3">Taso 3: Kysymykset 11–15 (64 000 € – 1 000 000 €)</option>
+          </select>
+        </div>
+        <div id="studyQuestionsContainer" class="study-questions-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="audio.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
