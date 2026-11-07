@@ -584,9 +584,149 @@ window.QUESTIONS_BANK = [
     correct: 1,
     explanation: "Komission asetuksen (EY) N:o 1234/2008 mukaisesti myyntiluvan muutokset jaetaan pieniin tyypin IA (ja IA_IN) ilmoituksiin, pieniin tyypin IB muutoksiin sekä huomattaviin tyypin II muutoksiin (lisäksi on laajennushakemukset, Line Extensions)."
   },
+  {
+    id: "t2_21",
+    tier: 2,
+    category: "Fimea & Kansallinen lainsäädäntö",
+    question: "Kuinka monta kuukautta etukäteen myyntiluvan haltijan on Lääkelain 27 §:n mukaan ilmoitettava Fimealle lääkevalmisteen kaupan pitämisen tilapäisestä tai pysyvästä keskeytyksestä (saatavuushäiriöstä)?",
+    options: [
+      "Vähintään 2 viikkoa etukäteen",
+      "Vähintään 2 kuukautta etukäteen, ellei kyseessä ole poikkeuksellinen olosuhde",
+      "Vähintään 6 kuukautta etukäteen",
+      "Ilmoitus tehdään vasta kun varasto on kokonaan loppunut"
+    ],
+    correct: 1,
+    explanation: "Lääkelain 27 §:n mukaan myyntiluvan haltijan on ilmoitettava Fimealle valmisteen kaupan pitämisen tilapäisestä tai pysyvästä keskeytyksestä vähintään kaksi kuukautta ennen keskeytystä, jollei erityisistä syistä muuta johdu."
+  },
+  {
+    id: "t2_22",
+    tier: 2,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Mitä tarkoittaa lääkevalmisteen myyntiluvan ns. 'Sunset Clause' -sääntö (Lääkelaki 29 § / Direktiivi 2001/83/EY art. 24)?",
+    options: [
+      "Myyntilupa päättyy automaattisesti, kun vaikuttavan aineen patentti umpeutuu",
+      "Myyntilupa raukeaa, jos valmistetta ei ole tuotu kauppaan 3 vuoden kuluessa luvan myöntämisestä tai jos kaupan pitäminen on ollut keskeytyneenä yhtäjaksoisesti 3 vuotta",
+      "Lääkkeen hintaa on alennettava 50 % viiden vuoden kuluttua myyntiluvasta",
+      "Vanhentuneet lääkkeet on hävitettävä ennen auringonlaskua"
+    ],
+    correct: 1,
+    explanation: "Sunset Clause -säännön mukaan myyntilupa raukeaa, jos valmistetta ei tuoda tosiasiallisesti kauppaan kolmen vuoden kuluessa myyntiluvan myöntämisestä tai jos sen kaupan pitäminen on ollut yhtäjaksoisesti keskeytyneenä kolmen vuoden ajan (Fimea voi myöntää poikkeuksen kansanterveydellisistä syistä)."
+  },
+  {
+    id: "t2_23",
+    tier: 2,
+    category: "Lääketurva (Pharmacovigilance)",
+    question: "Mitä tarkoitetaan lyhenteellä aRMM (additional Risk Minimisation Measures) lääketurvatoiminnassa?",
+    options: [
+      "Vain valmisteyhteenvedon ja pakkausselosteen normaalia päivittämistä",
+      "Rutiininomaisten toimien lisäksi vaadittavia lisäriskienminimointitoimia, kuten terveydenhuollon koulutusmateriaaleja, potilaskortteja tai raskaudenehkäisyohjelmia",
+      "Lääketehtaan vuotuista tilinpäätöstarkastusta",
+      "Automaattista haittavaikutusten koneoppimisalgoritmia"
+    ],
+    correct: 1,
+    explanation: "Kun rutiininomaiset riskienminimointitoimet (SmPC, PL, pakkauskoko, reseptistatus) eivät riitä, RMP:ssä määrätään lisätoimenpiteitä (aRMM), kuten koulutusmateriaaleja tai potilaskortteja, joiden kansallisen sisällön ja jakelusuunnitelman Fimea hyväksyy ennen käyttöönottoa."
+  },
+  {
+    id: "t2_24",
+    tier: 2,
+    category: "Kliiniset tutkimukset & GMP/GDP",
+    question: "Miten CTIS-järjestelmän kautta jätettävä kliinisen lääketutkimuksen hakemus jakautuu EU-asetuksen 536/2014 mukaisesti?",
+    options: [
+      "Prekliiniseen osaan ja kaupalliseen osaan",
+      "Osaan I (yhteinen tieteellinen ja valmisteeseen liittyvä arviointi, jota johtaa raportoiva jäsenvaltio RMS) ja Osaan II (kansallinen ja eettinen arviointi kussakin osallistuvassa jäsenvaltiossa)",
+      "Aikuisten osioon ja pediatriseen osioon",
+      "EMA-osioon ja komissio-osioon"
+    ],
+    correct: 1,
+    explanation: "Kliinisen lääketutkimuksen arviointiraportti koostuu Osasta I (yhteinen tieteellis-tekninen arviointi kaikille jäsenmaille RMS-maan johdolla) ja Osasta II (kunkin jäsenvaltion kansalliset näkökohdat, kuten tietoon perustuva suostumus, tutkittavien rekrytointi ja tietosuoja)."
+  },
+  {
+    id: "t2_25",
+    tier: 2,
+    category: "Lääkinnälliset laitteet & HTA",
+    question: "Milloin luokan I lääkinnällinen laite vaatii EU:n MD-asetuksen (MDR 2017/745) mukaan ilmoitetun laitoksen (Notified Body) osallistumisen vaatimustenmukaisuuden arviointiin?",
+    options: [
+      "Ei koskaan; kaikki luokan I laitteet ovat aina puhtaasti valmistajan itsesertifioimia",
+      "Kun laite toimitetaan steriilinä (Is), siinä on mittaustoiminto (Im) tai kyseessä on uudelleenkäytettävä kirurginen instrumentti (Ir)",
+      "Aina kun laitetta myydään useammassa kuin yhdessä EU-maassa",
+      "Vain silloin, kun laite käyttää verkkovirtaa"
+    ],
+    correct: 1,
+    explanation: "Tavalliset luokan I laitteet ovat valmistajan itsesertifioimia, mutta alaluokissa Is (steriili), Im (mittaustoiminto) ja Ir (uudelleenkäytettävät kirurgiset instrumentit) tarvitaan ilmoitetun laitoksen sertifiointi kyseisen erityisominaisuuden (steriiliys, mittaus tai uudelleenkäsittely) osalta."
+  },
+  {
+    id: "t2_26",
+    tier: 2,
+    category: "Fimea & Kansallinen lainsäädäntö",
+    question: "Kuinka monta sivuapteekkia yksityisellä apteekkarilla ja vastaavasti Helsingin yliopiston apteekilla voi Lääkelain 52 §:n mukaan enintään olla?",
+    options: [
+      "Yksityisellä apteekkarilla enintään 1 ja Helsingin yliopistolla enintään 5",
+      "Yksityisellä apteekkarilla enintään 3 ja Helsingin yliopistolla enintään 16",
+      "Yksityisellä apteekkarilla enintään 5 ja Helsingin yliopistolla rajoittamaton määrä",
+      "Sivuapteekkien määrää ei ole rajoitettu laissa"
+    ],
+    correct: 1,
+    explanation: "Lääkelain 52 §:n mukaan Fimea voi antaa apteekkarille luvan enintään kolmen sivuapteekin pitämiseen. Helsingin yliopisto voi puolestaan pitää Fimean kussakin tapauksessa antamalla luvalla enintään 16 sivuapteekkia."
+  },
+  {
+    id: "t2_27",
+    tier: 2,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Mitä tarkoittaa EMA:n PRIME-ohjelma (PRIority MEdicines)?",
+    options: [
+      "Järjestelmää, jolla myönnetään alennuksia rinnakkaislääkkeiden myyntilupamaksuista",
+      "Varhaisen vaiheen tehostettua tieteellistä ja regulatorista tukea lääkkeille, jotka kohdistuvat täyttämättömään lääketieteelliseen tarpeeseen (unmet medical need)",
+      "Apteekkien kanta-asiakasohjelmaa",
+      "Vain eläinlääkkeille tarkoitettua pikarekisteröintiä"
+    ],
+    correct: 1,
+    explanation: "EMA:n PRIME-järjestelmä tarjoaa varhaista ja ennakoivaa tieteellistä neuvontaa lupaaville kehitteillä oleville lääkkeille, jotka tuovat merkittävän hoidollisen edun täyttämättömään lääketieteelliseen tarpeeseen, ja valmistelee niitä nopeutettuun arviointiin (Accelerated Assessment)."
+  },
+  {
+    id: "t2_28",
+    tier: 2,
+    category: "Kliiniset tutkimukset & GMP/GDP",
+    question: "Mikä on lääketukkukaupan vastuunalaisen johtajan (Responsible Person, RP) lakisääteinen kelpoisuusvaatimus Suomessa Lääkelain 33 §:n mukaan?",
+    options: [
+      "Kauppatieteiden maisterin tutkinto",
+      "Laillistetun proviisorin tai laillistetun farmaseutin pätevyys (tai aiemman lain siirtymäsäännöksen mukainen kelpoisuus)",
+      "Logistiikkainsinöörin tutkinto",
+      "Mikä tahansa korkeakoulututkinto"
+    ],
+    correct: 1,
+    explanation: "Lääketukkukaupalla on oltava vastuunalainen johtaja (RP), joka vastaa GDP-vaatimusten noudattamisesta ja lääkkeiden asianmukaisesta käsittelystä; Suomessa tehtävään vaaditaan farmaseuttinen tutkinto (proviisori tai farmaseutti)."
+  },
+  {
+    id: "t2_29",
+    tier: 2,
+    category: "Lääketurva (Pharmacovigilance)",
+    question: "Mitä tarkoitetaan PASS-tutkimuksella (Post-Authorisation Safety Study)?",
+    options: [
+      "Ennen myyntilupaa tehtävää faasin I turvallisuustutkimusta terveillä vapaaehtoisilla",
+      "Myyntiluvan myöntämisen jälkeen suoritettavaa tutkimusta, jonka tarkoituksena on tunnistaa, luonnehtia tai määrittää lääkkeen turvallisuusvaara tai arvioida riskienhallintatoimien tehokkuutta",
+      "Lääke-erän mikrobiologista steriiliystestiä",
+      "Lääkkeen pakkausselosteen luettavuustestausta (User Testing)"
+    ],
+    correct: 1,
+    explanation: "PASS (Post-Authorisation Safety Study) on myyntiluvan saaneella lääkkeellä tehtävä kliininen tai havainnoiva (non-interventional) tutkimus turvallisuusprofiilin täsmentämiseksi tai riskienminimointitoimenpiteiden vaikuttavuuden mittaamiseksi. Se voi olla vapaaehtoinen tai viranomaisen velvoittama."
+  },
+  {
+    id: "t2_30",
+    tier: 2,
+    category: "Lääkinnälliset laitteet & HTA",
+    question: "Mitä lyhenne PICO tarkoittaa EU:n HTA-arvioinneissa (Joint Clinical Assessment, JCA) ja Fimean sairaalalääkearvioinneissa?",
+    options: [
+      "Pharmaceutical Inspection Co-operation Organisation",
+      "Population (Potilasjoukko), Intervention (Arvioitava hoito), Comparator (Vertailuhoito), Outcomes (Lopputulosmuuttujat)",
+      "Price, Indication, Cost, Orphan status",
+      "Patient Information and Clinical Observation"
+    ],
+    correct: 1,
+    explanation: "PICO-kehys (Population, Intervention, Comparator, Outcomes) määrittää tutkimuskysymyksen, johon terveysteknologian kliinisessä arvioinnissa (HTA/JCA) haetaan vastausta jäsenvaltioiden hoitokäytäntöjen pohjalta."
+  },
 
   // ============================================================================
-  // TIER 3: KYSYMYKSET 11–15 (64 000 € – 1 000 000 €) - Huippuregulaattoritaso (20 kysymystä)
+  // TIER 3: KYSYMYKSET 11–15 (64 000 € – 1 000 000 €) - Huippuregulaattoritaso (40 kysymystä)
   // ============================================================================
   {
     id: "t3_1",
@@ -867,5 +1007,286 @@ window.QUESTIONS_BANK = [
     ],
     correct: 1,
     explanation: "Vuoden 2026 alussa voimaan tulleessa apteekkitalouden uudistuksessa apteekkiveron määräytymisperuste muutettiin liikevaihdosta lääkemyynnin voittomarginaaliin (myyntikatteeseen), jotta vero kohdistuisi paremmin apteekin tosiasialliseen taloudelliseen kantokykyyn."
+  },
+  {
+    id: "t3_21",
+    tier: 3,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Kuinka moneen päivään CHMP:n enimmäisarviointiaika lyhenee 210 päivästä, kun keskitetyn menettelyn hakemukselle myönnetään nopeutettu arviointi (Accelerated Assessment, Asetus (EY) N:o 726/2004 art. 14(9))?",
+    options: [
+      "90 päivään",
+      "120 päivään",
+      "150 päivään",
+      "180 päivään"
+    ],
+    correct: 2,
+    explanation: "Kun lääkevalmiste on kansanterveyden ja erityisesti terapeuttisen innovaation kannalta erittäin merkittävä, CHMP voi myöntää nopeutetun arvioinnin (Accelerated Assessment), jolloin arviointiaika lyhenee 210 päivästä enintään 150 päivään."
+  },
+  {
+    id: "t3_22",
+    tier: 3,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Mitä edellytetään direktiivin 2001/83/EY artiklan 10c mukaisessa suostumushakemuksessa (Informed Consent Application)?",
+    options: [
+      "Potilasjärjestön kirjallista suostumusta kliinisen tutkimuksen julkaisemiseen",
+      "Uuden hakemuksen valmisteella on täysin sama kvalitatiivinen ja kvantitatiivinen koostumus sekä lääkemuoto kuin viitevalmisteella, ja viitevalmisteen myyntiluvan haltija antaa kirjallisen suostumuksen käyttää sen täydellistä dokumentaatiota (Moduulit 3, 4 ja 5)",
+      "Vain 8+2-tietosuoja-ajan päättymistä ilman bioekvivalenssitutkimuksia",
+      "Euroopan komission erityislupaa harvinaissairauksiin"
+    ],
+    correct: 1,
+    explanation: "Artiklan 10c mukaisessa Informed Consent -hakemuksessa hakijalla on alkuperäisen myyntiluvan haltijan kirjallinen suostumus viitata suoraan sen farmaseuttiseen, prekliiniseen ja kliiniseen dokumentaatioon, ja valmisteen koostumus sekä lääkemuoto ovat identtiset."
+  },
+  {
+    id: "t3_23",
+    tier: 3,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Mikä on ASMF-menettelyn (Active Substance Master File) 'suljetun osan' (Restricted Part / Closed Part) keskeinen periaate?",
+    options: [
+      "Sitä ei toimiteta edes Fimealle tai EMA:lle, vaan sitä säilytetään pelkästään vaikuttavan aineen tehtaalla",
+      "Vaikuttavan aineen valmistaja toimittaa sen suoraan viranomaiselle luottamuksellisena tietona (esim. yksityiskohtainen synteesireitti), eikä myyntiluvan hakijalla ole siihen pääsyä",
+      "Se julkaistaan EPAR-arviointiraportin liitteenä kauppaantuonnin jälkeen",
+      "Se korvaa kokonaan valmiin lääkevalmisteen Moduulin 3"
+    ],
+    correct: 1,
+    explanation: "ASMF jakautuu avoimeen osaan (Applicant's Part), jonka myyntiluvan hakija saa käyttöönsä, ja suljettuun osaan (Restricted Part), jonka vaikuttavan aineen (API) valmistaja toimittaa suoraan viranomaiselle suojatakseen valmistusprosessinsa liikesalaisuuksia."
+  },
+  {
+    id: "t3_24",
+    tier: 3,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Mikä organisaatio myöntää CEP-todistuksen (Certificate of Suitability to the monographs of the European Pharmacopoeia)?",
+    options: [
+      "EMA (Euroopan lääkevirasto Amsterdamissa)",
+      "EDQM (Euroopan neuvoston alainen lääkkeiden laatuasioiden direktoratti Strasbourgissa)",
+      "Euroopan komission terveyspääosasto (DG SANTE)",
+      "PIC/S (Pharmaceutical Inspection Co-operation Scheme)"
+    ],
+    correct: 1,
+    explanation: "CEP-todistuksen myöntää Strasbourgissa toimiva EDQM (European Directorate for the Quality of Medicines & HealthCare), joka toimii Euroopan neuvoston (Council of Europe) eikä EU:n alaisuudessa. CEP osoittaa, että Euroopan farmakopean monografia pystyy riittävästi kontrolloimaan aineen puhtautta."
+  },
+  {
+    id: "t3_25",
+    tier: 3,
+    category: "Lääketurva (Pharmacovigilance)",
+    question: "Mitä eroa on direktiivin 2001/83/EY artiklan 31 mukaisella lausuntomenettelyllä (Referral) ja artiklan 107i mukaisella kiireellisellä unionin menettelyllä (Urgent Union Procedure)?",
+    options: [
+      "Artikla 31 koskee vain eläinlääkkeitä ja artikla 107i vain ihmislääkkeitä",
+      "Artikla 107i käynnistyy automaattisesti, kun jäsenvaltio tai komissio harkitsee lääketurvatietojen perusteella kiireellistä toimintaa (kuten myyntiluvan peruuttamista, keskeyttämistä tai markkinoilta vedon vaatimista), ja sen käsittelee aina PRAC",
+      "Artikla 31 ei voi johtaa valmisteyhteenvedon muuttamiseen",
+      "Artikla 107i käsitellään aina kansallisessa tuomioistuimessa"
+    ],
+    correct: 1,
+    explanation: "Artikla 107i (Urgent Union Procedure) on tiukasti aikataulutettu (PRAC-suositus 60 päivässä) kiireellinen menettely, joka käynnistyy vakavasta lääketurvahuolesta, kun jäsenvaltio tai komissio katsoo kiireelliset toimenpiteet (esim. myyntiluvan keskeyttäminen tai myyntikielto) välttämättömiksi."
+  },
+  {
+    id: "t3_26",
+    tier: 3,
+    category: "Lääketurva (Pharmacovigilance)",
+    question: "Mikä on EURD-listan (European Union Reference Dates list) ja PSUSA-menettelyn (PSUR Single Assessment) tarkoitus?",
+    options: [
+      "Synkronoida samaa vaikuttavaa ainetta tai yhdistelmää sisältävien lääkkeiden PSUR-määräpäivät (Data Lock Point) ja arviointisyklit EU-tasolla yhtenäiseksi arvioinniksi",
+      "Määrittää viitehintajärjestelmän hintaputket neljännesvuosittain",
+      "Luetteloida EU:n ulkopuoliset kolmannet maat, joissa tehdään GMP-tarkastuksia",
+      "Seurata kliinisten lääketutkimusten potilasrekrytoinnin etenemistä"
+    ],
+    correct: 0,
+    explanation: "EURD-lista yhtenäistää samaa vaikuttavaa ainetta sisältävien valmisteiden PSUR-katsausten toimittamistiheyden ja tiedonkeruun päättymispäivät (DLP), jotta PRAC/CMDh voi suorittaa niille yhden yhteisen EU-tason PSUSA-arvioinnin."
+  },
+  {
+    id: "t3_27",
+    tier: 3,
+    category: "Lääketurva (Pharmacovigilance)",
+    question: "Mihin GVP Module V:n mukaiseen luokkaan (Category 1, 2, 3 vai 4) kuuluvat RMP:n lääketurvatoimenpiteinä sellaiset PASS-tutkimukset, jotka ovat myyntiluvan nimenomaisena ehtona (Annex II condition)?",
+    options: [
+      "Kategoriaan 1 (ja poikkeuksellisten olosuhteiden / ehdollisen myyntiluvan erityisvelvoitteet kategoriaan 2)",
+      "Kategoriaan 3",
+      "Kategoriaan 4",
+      "Niitä ei sisällytetä RMP:hen lainkaan"
+    ],
+    correct: 0,
+    explanation: "GVP Module V:n mukaisesti RMP:n lisälääketurvatoimet (additional pharmacovigilance activities) jaetaan kolmeen kategoriaan: Category 1 (myyntiluvan sitova ehto, Annex II), Category 2 (erityisvelvoite ehdollisessa myyntiluvassa tai poikkeuksellisissa olosuhteissa) ja Category 3 (muut vaaditut tutkimukset, jotka eivät ole myyntiluvan ehtona)."
+  },
+  {
+    id: "t3_28",
+    tier: 3,
+    category: "Lääkinnälliset laitteet & HTA",
+    question: "Mitä EU:n lääkinnällisten laitteiden asetuksen (MDR 2017/745) artikla 117 edellyttää kiinteältä lääke–laite-yhdistelmävalmisteelta (integral drug-device combination, esim. esitäytetty ruisku tai inhalaattori), jota säännellään lääkkeenä?",
+    options: [
+      "Valmistajan on haettava laiteosalle erillinen CE-merkintä ja rekisteröitävä se EUDAMEDiin lääkinnällisenä laitteena",
+      "Myyntilupahakemukseen on liitettävä ilmoitetun laitoksen antama vaatimustenmukaisuuslausunto (Notified Body Opinion, NBOp) laiteosan yleisten turvallisuus- ja suorituskykyvaatimusten (GSPR) täyttymisestä (ellei laiteosalla jo ole CE-todistusta)",
+      "Valmisteelle ei tarvitse hakea lääkkeen myyntilupaa lainkaan",
+      "Fimea testaa laiteosan mekaanisen kestävyyden omassa laboratoriossaan ennen myyntilupaa"
+    ],
+    correct: 1,
+    explanation: "MDR:n artikla 117 muutti direktiivin 2001/83/EY liitettä I siten, että kiinteän lääke–laite-yhdistelmän (jossa laiteosa kuuluisi yksinään luokkaan Is/Im, IIa, IIb tai III) myyntilupahakemukseen on sisällytettävä joko ilmoitetun laitoksen EU-todistus tai ilmoitetun laitoksen lausunto (NBOp) MDR Liitteen I GSPR-vaatimusten täyttymisestä."
+  },
+  {
+    id: "t3_29",
+    tier: 3,
+    category: "Lääkinnälliset laitteet & HTA",
+    question: "Mikä on MDR (2017/745) ja IVDR (2017/746) artiklan 15 mukainen PRRC-henkilö?",
+    options: [
+      "Ilmoitetun laitoksen pääarvioija (Principal Reviewer for Regulatory Certification)",
+      "Valmistajan ja valtuutetun edustajan organisaatiossa oleva säännösten noudattamisesta vastaava henkilö (Person Responsible for Regulatory Compliance)",
+      "Sairaalan potilasasiamies (Patient Rights and Risk Coordinator)",
+      "Euroopan komission nimeämä paneeliasiantuntija"
+    ],
+    correct: 1,
+    explanation: "MDR/IVDR artiklan 15 mukaan jokaisella laitevalmistajalla (ja EU:n valtuutetulla edustajalla) on oltava organisaatiossaan vähintään yksi säännösten noudattamisesta vastaava henkilö (PRRC), jolla on vaadittu asiantuntemus ja joka varmistaa mm. teknisten asiakirjojen, laitteiden vapauttamisen ja vaaratilanneraportoinnin asianmukaisuuden."
+  },
+  {
+    id: "t3_30",
+    tier: 3,
+    category: "Lääkinnälliset laitteet & HTA",
+    question: "Miten IVD-asetus (IVDR 2017/746) luokittelee lääkehoidon valintaan liittyvät diagnostiikkakoestukset eli ns. 'Companion Diagnostics' (CDx) -laitteet?",
+    options: [
+      "Luokkaan A (matalin riskiluokka, itsesertifioitava)",
+      "Luokkaan B",
+      "Luokkaan C (ja ilmoitetun laitoksen on kuultava EMA:a tai kansallista lääkeviranomaista kuten Fimeaa osana arviointia)",
+      "Luokkaan D (tarttuvien verensiirtotautien korkein riskiluokka)"
+    ],
+    correct: 2,
+    explanation: "IVDR:n liitteen VIII säännön 3(f) mukaan lääkehoidon valintaan liittyvät diagnostiikkakoestukset (Companion Diagnostics, CDx) kuuluvat luokkaan C, ja ilmoitetun laitoksen on pyydettävä kyseisen lääkkeen arvioineelta lääkeviranomaiselta (EMA tai kansallinen viranomainen) tieteellinen lausunto laitteen soveltuvuudesta."
+  },
+  {
+    id: "t3_31",
+    tier: 3,
+    category: "Kliiniset tutkimukset & GMP/GDP",
+    question: "Mitä EudraLex Volume 4 (EU-GMP) Annex 13 sääntelee?",
+    options: [
+      "Tutkimuslääkkeiden (Investigational Medicinal Products, IMP) valmistusta, pakkaamista, merkintöjä, sokkouttamista ja erän vapauttamista",
+      "Radiofarmaseuttisten valmisteiden valmistusta",
+      "Biologisten vaikuttavien aineiden valmistusta",
+      "Näytteenottoa lähtö- ja pakkausmateriaaleista"
+    ],
+    correct: 0,
+    explanation: "EudraLex Volume 4 Annex 13 (sekä asetuksen 536/2014 nojalla annettu komission delegoitu asetus (EU) 2017/1569) koskee kliinisissä lääketutkimuksissa käytettävien tutkimuslääkkeiden (IMP) hyvää tuotantotapaa, mukaan lukien kaksivaiheinen vapautusmenettely."
+  },
+  {
+    id: "t3_32",
+    tier: 3,
+    category: "Kliiniset tutkimukset & GMP/GDP",
+    question: "Mistä sanoista muodostuu GMP- ja GCP-valvonnassa tiedon eheyttä (Data Integrity) kuvaava peruskirjainyhdistelmä ALCOA?",
+    options: [
+      "Attributable, Legible, Contemporaneous, Original, Accurate",
+      "Authorized, Locked, Certified, Audited, Archived",
+      "Automated, Validated, Controlled, Observed, Approved",
+      "Analytical, Laboratory, Clinical, Operational, Assurance"
+    ],
+    correct: 0,
+    explanation: "ALCOA-periaatteen mukaan kriittisen datan on oltava Attributable (jäljitettävissä tekijään), Legible (luettavaa), Contemporaneous (kirjattu tapahtumahetkellä), Original (alkuperäistä) ja Accurate (virheetöntä). ALCOA+ lisää tähän vielä Complete, Consistent, Enduring ja Available."
+  },
+  {
+    id: "t3_33",
+    tier: 3,
+    category: "Kliiniset tutkimukset & GMP/GDP",
+    question: "Missä oikeassa järjestyksessä laitteiden ja järjestelmien kvalifiointivaiheet etenevät EU-GMP Annex 15:n ('Qualification and Validation') mukaisesti?",
+    options: [
+      "PQ → OQ → IQ → DQ",
+      "DQ (Design Qualification) → IQ (Installation Qualification) → OQ (Operational Qualification) → PQ (Performance Qualification)",
+      "IQ → DQ → PQ → OQ",
+      "OQ → IQ → DQ → PQ"
+    ],
+    correct: 1,
+    explanation: "Annex 15:n mukainen kvalifiointiketju alkaa käyttäjävaatimuksista (URS), jota seuraavat suunnittelun kvalifiointi (DQ), tehdyn asennuksen kvalifiointi (IQ), toiminnallinen kvalifiointi (OQ) ja lopuksi suorituskyvyn kvalifiointi (PQ)."
+  },
+  {
+    id: "t3_34",
+    tier: 3,
+    category: "Fimea & Kansallinen lainsäädäntö",
+    question: "Mitä Lääkelain 15 a § sääntelee apteekkien ja sairaala-apteekkien osalta?",
+    options: [
+      "Lääkkeiden koneellista annosjakelua (oikeutta harjoittaa koneellista annosjakelua Fimean luvalla tai teettää se sopimusvalmistuksena)",
+      "Eläinlääkkeiden etämyyntiä ulkomaille",
+      "Rokotteiden maahantuontia",
+      "Huumausaineiden hävittämistä"
+    ],
+    correct: 0,
+    explanation: "Lääkelain 15 a §:n mukaan apteekki tai sairaala-apteekki voi Fimean myöntämällä luvalla suorittaa lääkkeiden koneellista annosjakelua tai teettää sen sopimusvalmistuksena toisessa luvan saaneessa yksikössä tai lääketehtaassa."
+  },
+  {
+    id: "t3_35",
+    tier: 3,
+    category: "Fimea & Kansallinen lainsäädäntö",
+    question: "Mikä on Lääkelain 91 a §:n pääsääntö reseptilääkkeiden (lääkemääräystä edellyttävien lääkevalmisteiden) markkinoinnista väestölle?",
+    options: [
+      "Reseptilääkkeitä saa mainostaa televisiossa klo 21 jälkeen",
+      "Lääkemääräyksellä toimitettavien lääkevalmisteiden markkinointi väestölle on kokonaan kielletty (pois lukien viranomaisen hyväksymät rokotuskampanjat)",
+      "Reseptilääkkeitä saa markkinoida kuluttajille, jos mainoksessa ei mainita hintaa",
+      "Reseptilääkkeitä saa markkinoida sosiaalisessa mediassa täysi-ikäisille"
+    ],
+    correct: 1,
+    explanation: "Lääkelain 91 a §:n (ja direktiivin 2001/83/EY) mukaan lääkemääräyksellä toimitettavia taikka huumausaineita tai psykotrooppisia aineita sisältäviä lääkevalmisteita ei saa markkinoida väestölle. Niitä saa markkinoida ainoastaan lääkkeen määräämiseen tai toimittamiseen oikeutetuille henkilöille."
+  },
+  {
+    id: "t3_36",
+    tier: 3,
+    category: "Fimea & Kansallinen lainsäädäntö",
+    question: "Mitä Fimean ylläpitämä kansallinen riskilääkeluokitus koskee?",
+    options: [
+      "Vain laittomia katukaupan huumausaineita",
+      "Suuren riskin lääkkeitä (High-Alert Medications), joihin liittyy kohonnut riski aiheuttaa potilaalle vakavaa haittaa poikkeavassa tilanteessa tai lääkityspoikkeamassa",
+      "Lääkkeitä, joiden saatavuus on loppumassa apteekeista",
+      "Kalleimpia Kela-korvattavia biologisia lääkkeitä"
+    ],
+    correct: 1,
+    explanation: "Fimean kansallinen riskilääkeluokitus tunnistaa keskeiset suuren riskin lääkkeet (esim. antikoagulantit, insuliinit, opioidit, solunsalpaajat ja kaliumkonsentraatit), joiden virheellinen käyttö tai annostelu voi aiheuttaa potilaalle vakavia tai kuolemaan johtavia haittoja."
+  },
+  {
+    id: "t3_37",
+    tier: 3,
+    category: "Myyntiluvat & EU-menettelyt",
+    question: "Mitä mahdollistaa asetuksen (EY) N:o 726/2004 artiklan 58 mukainen 'EU-M4all' -menettely?",
+    options: [
+      "Myyntiluvan myöntämisen kaikissa 27 EU-maassa ilman Euroopan komission päätöstä",
+      "EMA:n CHMP voi yhteistyössä WHO:n ja kohdemaiden viranomaisten kanssa antaa tieteellisen lausunnon ihmislääkkeestä, joka on tarkoitettu yksinomaan EU:n ulkopuolisille markkinoille kansanterveydellisesti tärkeiden sairauksien ehkäisyyn tai hoitoon",
+      "Rinnakkaislääkkeiden automaattisen hyväksymisen ilman hakemusta",
+      "Kaikkien eläinlääkkeiden siirtämisen ihmislääkekäyttöön"
+    ],
+    correct: 1,
+    explanation: "EU-M4all (entinen Article 58 procedure) mahdollistaa sen, että EMA:n CHMP arvioi yhteistyössä Maailman terveysjärjestön (WHO) kanssa korkean prioriteetin lääkkeitä ja rokotteita, jotka on tarkoitettu käytettäväksi EU:n ulkopuolella matalan ja keskitulotason maissa."
+  },
+  {
+    id: "t3_38",
+    tier: 3,
+    category: "Kliiniset tutkimukset & GMP/GDP",
+    question: "Kuinka kauan kliinisen lääketutkimuksen kantatiedostoa (Trial Master File, TMF) on toimeksiantajan ja tutkijan säilytettävä tutkimuksen päättymisen jälkeen EU:n kliinisten lääketutkimusten asetuksen (EU 536/2014 art. 58) mukaan?",
+    options: [
+      "Vähintään 5 vuotta",
+      "Vähintään 10 vuotta",
+      "Vähintään 15 vuotta",
+      "Vähintään 25 vuotta"
+    ],
+    correct: 3,
+    explanation: "EU-asetuksen 536/2014 artiklan 58 mukaan toimeksiantajan ja tutkijan on arkistoitava kliinisen lääketutkimuksen kantatiedoston (TMF) sisältö vähintään 25 vuoden ajaksi tutkimuksen päättymisen jälkeen (ellei muu unionin lainsäädäntö edellytä vielä pidempää aikaa, esim. ATMP-valmisteissa 30 vuotta)."
+  },
+  {
+    id: "t3_39",
+    tier: 3,
+    category: "Lääketurva (Pharmacovigilance)",
+    question: "Mikä on lakisääteinen sijoittautumis- ja tavoitettavuusvaatimus myyntiluvan haltijan lääketurvatoiminnasta vastaavalle kelpoisuusehdot täyttävälle henkilölle (EU-QPPV)?",
+    options: [
+      "QPPV voi asua missä tahansa maassa (esim. Yhdysvalloissa tai Sveitsissä), kunhan hänellä on sähköposti",
+      "QPPV:n on asuttava ja toimittava EU/ETA-alueella, oltava tavoitettavissa ympäri vuorokauden (24/7) ja vastattava yhdestä lääketurvajärjestelmästä (PSMF)",
+      "Jokaisella myyntiluvan haltijalla on oltava erillinen EU-QPPV jokaisessa 27 jäsenvaltiossa",
+      "QPPV:n on oltava Fimean virkamies"
+    ],
+    correct: 1,
+    explanation: "Direktiivin 2001/83/EY artiklan 104 mukaan myyntiluvan haltijalla on oltava pysyvästi ja yhtäjaksoisesti käytettävissään yksi EU-QPPV, jonka on asuttava ja toimittava EU/ETA-alueella. Lisäksi kansallinen viranomainen voi vaatia kansallisen yhteyshenkilön (LPPV) nimeämistä."
+  },
+  {
+    id: "t3_40",
+    tier: 3,
+    category: "Lääkinnälliset laitteet & HTA",
+    question: "Mitä tarkoittaa MDR-asetuksen (EU 2017/745) artiklan 5(5) mukainen 'in-house' -poikkeus (ns. oma laitevalmistus terveydenhuollon yksikössä)?",
+    options: [
+      "Terveydenhuollon toimintayksikkö voi valmistaa ja käyttää laitteita omissa tiloissaan ilman CE-merkintää tiukoin edellytyksin, jos vastaavaa potilasryhmän erityistarpeet täyttävää laitetta ei ole markkinoilla eikä laitteita luovuteta toiselle oikeushenkilölle",
+      "Sairaala voi valmistaa CE-merkitsemättömiä laitteita ja myydä niitä vapaasti muille hyvinvointialueille",
+      "Potilas voi tulostaa 3D-tulostimella oman sydämentahdistimensa kotona",
+      "Sairaaloiden ei tarvitse noudattaa MDR:n liitteen I yleisiä turvallisuus- ja suorituskykyvaatimuksia (GSPR) lainkaan"
+    ],
+    correct: 0,
+    explanation: "MDR:n (ja IVDR:n) artiklan 5(5) mukainen in-house-poikkeus sallii terveydenhuollon yksiköiden valmistaa ja käyttää laitteita omassa toiminnassaan tietyn potilasryhmän erityistarpeisiin, kunhan liitteen I GSPR-vaatimukset täyttyvät, markkinoilla ei ole vastaavaa CE-merkittyä laitetta, valmistus ei tapahdu teollisessa mittakaavassa eikä laitetta siirretä toiselle oikeushenkilölle."
   }
 ];
+

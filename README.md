@@ -12,14 +12,14 @@ TV-visailun (*Haluatko miljonääriksi?*) säännöillä toimiva suomenkielinen 
     1. `50:50` (Poistaa kaksi väärää vastausvaihtoehtoa)
     2. `Kysy yleisöltä` (Studioyleisön pylväskaavioäänestys)
     3. `Kilauta kollegalle` (Puhelu Fimean tai EU-verkoston asiantuntijalle)
-- **60 asiantuntijatason kysymystä 5 eri osa-alueelta:**
-  1. *Fimea & Kansallinen lainsäädäntö* (Lääkelaki 395/1987, apteekkiluvat, lääkevaihto, Lääke75+, erityisluvat, velvoitevarastointi, Sic!-lehti)
-  2. *Myyntiluvat & EU-menettelyt* (CP, MRP, DCP, CHMP, CMDh, 8+2+1-dokumentaatiosuoja, 10(1)/10(3)/10a-hakemukset, harvinaislääkkeet, PIP, muutoshakemukset IA/IB/II)
-  3. *Lääketurva (Pharmacovigilance)* (PRAC, EudraVigilance, ICSR 15/90 pv, PSUR, RMP, PSMF, DHPC, lisäseuranta ▼, tuotevirheet)
-  4. *Kliiniset tutkimukset & GMP/GDP* (CTIS, EU 536/2014, Tukija, SUSAR-raportointi, QP ja Annex 16, steriilivalmistus Annex 1, GDP)
-  5. *Lääkinnälliset laitteet & HTA* (MDR 2017/745, IVDR, CE-merkintä, EUDAMED, sairaalalääkkeiden HTA-arviointi, EU:n HTA-asetus 2021/2282)
+- **90 asiantuntijatason kysymystä 5 eri osa-alueelta:**
+  1. *Fimea & Kansallinen lainsäädäntö* (Lääkelaki 395/1987, apteekkiluvat, sivuapteekit, koneellinen annosjakelu, lääkevaihto, Lääke75+, riskilääkeluokitus, erityisluvat, saatavuushäiriöt, velvoitevarastointi, lääkemarkkinoinnin valvonta, Sic!-lehti)
+  2. *Myyntiluvat & EU-menettelyt* (CP, MRP, DCP, CHMP, CMDh, PRIME & Accelerated Assessment, Sunset Clause, 8+2+1-dokumentaatiosuoja, 10(1)/10(3)/10a/10c-hakemukset, ASMF & CEP/EDQM, EU-M4all, harvinaislääkkeet, PIP, muutoshakemukset IA/IB/II)
+  3. *Lääketurva (Pharmacovigilance)* (PRAC, EudraVigilance, ICSR 15/90 pv, PSUR, EURD & PSUSA, RMP, PASS Category 1–3, aRMM, PSMF, EU-QPPV, Art. 31 vs. 107i referral, DHPC, lisäseuranta ▼, tuotevirheet)
+  4. *Kliiniset tutkimukset & GMP/GDP* (CTIS Osa I & II, EU 536/2014, TMF 25 v arkistointi, Tukija, SUSAR-raportointi, QP & Annex 16, IMP Annex 13, steriilivalmistus Annex 1, kvalifiointi Annex 15 DQ/IQ/OQ/PQ, ALCOA+, GDP & RP)
+  5. *Lääkinnälliset laitteet & HTA* (MDR 2017/745, Art. 117 yhdistelmävalmisteet & NBOp, Luokka Is/Im/Ir, Art. 5(5) in-house-valmistus, PRRC Art. 15, IVDR & Companion Diagnostics CDx, CE-merkintä, EUDAMED, sairaalalääkkeiden HTA, EU:n HTA-asetus 2021/2282 & PICO)
 - **Regulaatiofakta-tietoiskut:** Jokaisen lukitun vastauksen jälkeen näytetään perusteltu selitys pykälineen ja käytäntöineen.
-- **Kysymyspankki & Oppimistila:** Kaikkia 60 kysymystä ja selitystä voi selata ja hakea hakusanoilla yläpalkin *Kysymyspankki*-painikkeesta.
+- **Kysymyspankki & Oppimistila:** Kaikkia 90 kysymystä ja selitystä voi selata ja hakea hakusanoilla yläpalkin *Kysymyspankki*-painikkeesta.
 - **Sisäänrakennettu Web Audio -äänisyntetisaattori:** Ei ulkoisia äänitiedostoriippuvuuksia.
 
 ---
