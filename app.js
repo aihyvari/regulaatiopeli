@@ -277,7 +277,7 @@
   function startNewGame() {
     const rawName = els.playerNameInput.value.trim();
     state.playerName = rawName || "Erityisasiantuntija";
-    state.selectedCategory = els.categorySelect.value || "Kaikki aihealueet";
+    state.selectedCategory = "Kaikki aihealueet";
     state.deck = buildGameDeck(state.selectedCategory);
     state.currentIndex = 0;
     state.selectedOption = null;

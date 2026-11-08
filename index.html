@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <!-- Taustan studiovalaistus -->
@@ -65,8 +65,27 @@
           EU:n myyntilupamenettelyistä, lääketurvasta, GMP/GDP-valvonnasta, HTA-arvioinnista ja lääkinnällisistä laitteista.
         </p>
 
+        <!-- Huumoripitoinen Parental Advisory -tarra & Valmisteyhteenvedon varoitus -->
+        <div class="advisory-banner" role="note" aria-label="Sisältövaroitus">
+          <div class="parental-sticker" aria-hidden="true">
+            <div class="sticker-top">PARENTAL &amp; FIMEA</div>
+            <div class="sticker-mid">ADVISORY</div>
+            <div class="sticker-sub">EXPLICIT BUREAUCRACY</div>
+            <div class="sticker-bot">BORING LANGUAGE • KILLS ALL THE SEX</div>
+          </div>
+          <div class="advisory-text">
+            <div class="advisory-title">⚠️ VIRALLINEN SISÄLTÖVAROITUS (SmPC kohta 4.4: Erityisvaroitukset)</div>
+            <p>
+              <strong>Varoitus: Äärimmäisen tylsää kieltä &amp; välitön seksintappaja.</strong>
+              Tämä peli sisältää raakaa viranomaiskapulakieltä, EU-asetusten artiklanumeroita ja Fimean määräyksiä.
+              Sovelluksen pelaaminen <strong>tappaa tutkitusti kaiken seksin, romantiikan ja tunnelman 100 % teholla</strong>
+              (ns. <em>libidon välitön Sunset Clause</em>). Ei suositella pelattavaksi treffeillä tai makuuhuoneessa.
+            </p>
+          </div>
+        </div>
+
         <div class="start-card">
-          <div class="form-row">
+          <div class="form-row form-row-single">
             <div class="form-group">
               <label for="playerNameInput">Kilpailijan nimi tai titteli</label>
               <input
@@ -75,18 +94,6 @@
                 placeholder="Esim. Erityisasiantuntija Virtanen"
                 maxlength="32"
               />
-            </div>
-
-            <div class="form-group">
-              <label for="categorySelect">Aihealue</label>
-              <select id="categorySelect">
-                <option value="Kaikki aihealueet">Kaikki aihealueet (Virallinen TV-formaatti)</option>
-                <option value="Fimea & Kansallinen lainsäädäntö">Fimea &amp; Kansallinen lainsäädäntö</option>
-                <option value="Myyntiluvat & EU-menettelyt">Myyntiluvat &amp; EU-menettelyt (CP/MRP/DCP)</option>
-                <option value="Lääketurva (Pharmacovigilance)">Lääketurva (Pharmacovigilance)</option>
-                <option value="Kliiniset tutkimukset & GMP/GDP">Kliiniset tutkimukset &amp; GMP/GDP</option>
-                <option value="Lääkinnälliset laitteet & HTA">Lääkinnälliset laitteet &amp; HTA</option>
-              </select>
             </div>
           </div>
 
@@ -377,8 +384,8 @@
     </div>
   </div>
 
-  <script src="questions.js?v=2"></script>
-  <script src="audio.js?v=2"></script>
-  <script src="app.js?v=2"></script>
+  <script src="questions.js?v=3"></script>
+  <script src="audio.js?v=3"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
